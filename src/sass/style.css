@@ -1,0 +1,164 @@
+.cover{
+    width: 769px;
+    height: 659px;
+    z-index: 600;
+
+
+    background-image: url('../images/aparat.png');
+}
+
+.game{
+    width: 769px;
+    height: 659px;
+    z-index: 600;
+    display: block;
+    margin: 50px auto;
+    position: relative;
+    
+}
+
+.hand{
+    z-index: -200;
+    position: absolute;
+    top: 45%;
+    right: -22%;
+   transform-origin: -50%;
+    transform: rotateZ(-45deg);
+}
+
+.rotat{
+    animation-name: anima;
+    animation-iteration-count: 1;
+    animation-duration: 1.7s;
+}
+
+
+@keyframes anima {
+    0%{transform: rotateZ(-10deg);}
+    25%{transform: rotateZ(15deg);}
+    50%{transform: rotateZ(45deg);}
+    75%{transform: rotateZ(15deg)}
+    100%{transform: rotateZ(-10deg)}
+}
+
+.main_title{
+    position: absolute;
+    left: 50%;
+    top: 10%;
+    transform: translate(-50%);
+    font-weight: 900;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.games_list{
+    list-style: none;
+    display: flex;
+   
+}
+
+.games_item{
+    display: block;
+    width: 180px;
+    height: 180px;
+    background-color: red;
+    border: 2px solid black;
+    transform: skewX(-25deg);
+    overflow: hidden;
+    transition: all .25s linear;
+
+}
+
+.games_item:hover .overlay{
+    top: 0;
+}
+
+.games_item + .games_item{
+    margin-left: 10px;
+}
+
+.prev{
+    transform: skewX(0deg);
+    width: 260px;
+    height: 260px;
+    position: relative;
+    
+}
+
+.screen_item{
+    width: 100px;
+    height: 180px;
+   color: red;
+
+    text-align: center;
+    font-size: 160px;
+}
+
+.screen_item + .screen_item{
+    margin-left: 60px;
+}
+
+body{
+    background-image: url('../images/main-bg.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+h1{
+    color: red;
+}
+
+.overlay{
+    width: 300px;
+    height: 300px;
+    display: block;
+    background-color: rgba(0, 0, 255, 0.329);
+    position: absolute;
+    z-index: 999;
+    top: 100%;
+
+    transition: all .25s linear;
+}
+
+.games_link{
+    font-size: 20px;
+    color: white;
+
+    position: absolute;
+    top: 25%;
+    left: 25%;
+    transform: translate(-25%, -25%);
+    transform: skewX(25deg);
+
+    text-decoration: none;
+    padding: 5px 10px;
+    background-color: seagreen;
+    border-radius: 16px;
+    transition: all .25s linear;
+}
+
+.games_link:hover,.games_link:focus{
+    background-color: sienna;
+    color: red;
+}
+
+.field_cover{
+    margin: 0 auto;
+    width: 1200px;
+
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+    background-color: steelblue;
+}
+
+
+.game_name{
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    background-color: rgba(216, 191, 216, 0.308);
+    transform: translate(-50%, -45%);
+    z-index: 999;
+
+    color: white;
+}
