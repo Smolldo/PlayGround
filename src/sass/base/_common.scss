@@ -1,0 +1,39 @@
+body{
+    margin: 0;
+    padding: 0;
+    left: 0%;
+    top: 0;
+    background-image: url('.././images/main-bg.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.container{
+    width: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+  
+    @media screen and (min-width:320px) {
+      width: 320px;
+      padding-left:10px;
+      padding-right: 10px;
+}
+
+@media screen and (min-width:768px) {
+      width: 768px;
+      padding-left: 15px;
+padding-right: 15px;
+}
+
+@media screen and (min-width:1200px) {
+      width: 1200px;
+}
+}
+
+.is-none{
+    opacity: 0;
+    pointer-events: none;
+}
+

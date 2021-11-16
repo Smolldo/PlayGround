@@ -4,22 +4,43 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./sass/style.css">
+    <link rel="stylesheet" href="../sass/main.css">
     <title>Bandit</title>
 </head>
 <body>
-    <div class="game">
-        <div class="cover">
-        <h1 class="main_title">3 IN DA ROW</h1>
-        <ul class="screen_list">
-            <li class="screen_item">7</li>
-            <li class="screen_item">7</li>
-            <li class="screen_item">7</li>
-        </ul>
+    <div class="container">
+        <div class="game">
+            <div class="cover">
+            <ul class="stats_list">
+                <li class="stats_item">
+                    <span class="money_s">Na pivo: </span><span class="money_count">100$</span>
+                </li>
+                <li class="stats_item">
+                    <span class="spins_s">Spins: </span><span class="spin_counter">5</span>
+                </li>
+            </ul>
+            <ul class="screen_list">
+                <li class="screen_item"></li>
+                <li class="screen_item"></li>
+                <li class="screen_item"></li>
+            </ul>
+            </div>
+            <img class="hand" src="../images/hand.png" alt="">
         </div>
-        <img class="hand" src="./images/hand.png" alt="">
+    
+        <div class="backdrop is-none">
+            <div class="secr_cover">
+                <h2 class="title luck">Try your Luck!</h2>
+                <img src="../images/mystery-box.png" class="myster" alt="boh" width="200px" height="200px">
+                <img src="../images/dollars.png" class="van is-none" width="200px" height="130px" alt="">
+            </div>
+        </div>
+    
+        <audio src="../audio/horse.mp3" class="horse"></audio>
+        <audio src="../audio/ratat.mp3" class="rata"></audio>
+    
+        <a href="../index.html" class="exit">Main Menu</a>
     </div>
-
-    <script src="./js/index.js"></script>
+    <script src="../js/index.js"></script>
 </body>
 </html>
