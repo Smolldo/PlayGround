@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./images/icon.png">
+    <link rel="stylesheet" href="./sass/main.scss">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <title>Game of Numbers</title>
+</head>
+<body>
+    <!--Greeting window-->
+    <div class="backdrop">
+        <h1 class="backdrop_title">Game Of Numbers</h1>
+        <div class="greet_window">
+            <ul class="greet_list">
+                <li class="greet_item">
+                    <button class="greet_btn" data-action="start">Start</button>
+                </li>
+                <li class="greet_item">
+                    <a href="../../index.html" class="greet_btn" data-action="exit">Exit</a>
+                </li>
+            </ul>
+        </div>
+        <span class="copyright">&copy; Gonyk "SD" Michael</span>
+    </div>
+    <!--Rules WindoW-->
+    <div class="rule_cover is-hidden">
+       <div class="obolochka">
+        <div class="container">
+            <section class="rule_section">
+                <h2 class="rule_title">Rules:</h2>
+                <ol class="rule_list_mobile">
+                    <li class="rule_item">Select a name. </li>
+                    <li class="rule_item">By pressing the 'generate' button, you and the AI ​​will have random numbers.</li>
+                    <li class="rule_item"> Whoever has the highest number wins the round.</li>
+                    <li class="rule_item">The game lasts up to 3 wins.</li>
+                    <li class="rule_item">In case of a tie, an additional round is held.</li>
+                    <li class="rule_item">Good luck, Samurai.</li>
+                </ol>
+                <pre class="rule_list"></pre>
+                <button class="rule_confirm">OK</button>
+            </section>
+        </div>
+       </div>
+    </div>
+    <!--Player Name-->
+    <div class="name_block is-none">
+        <div class="name_form">
+            <label for="name_select" class="name_label">What's your name?</label>
+        <input type="text" name="name_select" id="player_name">
+        <button class="name_confirm">CONFIRM</button>
+        </div>
+    </div>
+        <audio class="boss_music" src="./audio/boss.mp3"></audio>
+        <audio class="hit" src="./audio/блюп.wav"></audio>
+        <audio class="back"src="./audio/start.mp3"></audio>
+        <audio class="clik" src="./audio/клик.wav"></audio>
+        <audio class="min_hurt" src="./audio/hurt-mine.mp3"></audio>
+        <audio class="rob_hurt" src="./audio/hurt-rob.mp3"></audio>
+        <audio src="./audio/amogus.mp3" class="amogus"></audio>
+        <audio src="./audio/victory.mp3" class="victory"></audio>
+        <button class="sound_btn">@AUDIO@</button>
+
+    <!--first enemy partial-->
+     <!--Game WindoW-->
+     <div class=" game_field is">
+        <div class="first_dialog container">
+            <div class="enemy_phrase is">
+                <p class="enemy_text"></p>
+                <img src="./images/enemy1-speak.png" alt="enemy speak" class="enemy_icon enemy_speak">
+                <button class="next_btn">NEXT -></button>
+            </div>
+            <div class="hero_phrase is">
+                <img src="./images/me-speak.png" alt="hero speak" class="hero_icon">
+                <p class="hero_text"></p>
+                <button class="start_battle">Fight</button>
+            </div>
+            
+        </div>
+        <div class=" game is">
+            <h1 class="game_title">Game of Nums</h1>
+        <div class="gamers_block container">
+            <div class="player playerBlock">
+                <div class="player_photo player_photo_p">
+                    <img src="./images/me.png" alt="player icon" class="pers char_icon">
+                </div>
+                <div class="player_stats">
+                    <h3 class="player_name">@NAME@</h3>
+                    <ul class="round_list_player round_list">
+                      <!--  <li class="round_item">
+                            <span class="player_round_box"><img class="hp" src="./images/hp.png" alt="HP"></span>
+                        </li>
+                        <li class="round_item">
+                            <span class="player_round_box"><img class="hp" src="./images/hp.png" alt="HP"></span>
+                        </li>
+                        <li class="round_item">
+                            <span class="player_round_box"><img class="hp" src="./images/hp.png" alt="HP"></span>
+                        </li>-->
+                    </ul>
+                </div>
+            </div>
+            <!--Active parts-->
+            <div class="game_screen">
+                <ul class="generating_num_list">
+                    <li class="generating_num_item PL_item">
+                        <span class="num_now_pl">-</span>
+                    </li>
+                    <li class="generating_num_item AI_item">
+                        <span class="num_now_ai">-</span>
+                    </li>
+                </ul>
+                <button class="generate_btn">FIGHT</button>
+            </div>
+            <!--AI block-->
+            <div class="player AIBlock">
+                <div class="player_photo player_photo_c"> 
+            <img src="./images/enemy1.png" alt="player icon" class="enemy1 char_icon">
+                </div>
+                <div class="player_stats">
+                    <h3 class="player_name">Lendo Akbar</h3>
+                    <ul class="round_list_computer round_list">
+                        <!--<li class="round_item">
+                            <span class="comp_round_box"><img class="hp" src="./images/hp.png" alt="HP"></span>
+                        </li>
+                        <li class="round_item">
+                            <span class="comp_round_box"><img class="hp" src="./images/hp.png" alt="HP"></span>
+                        </li>
+                        <li class="round_item">
+                            <span class="comp_round_box"><img class="hp" src="./images/hp.png" alt="HP"> </span>
+                        </li>-->
+                    </ul>
+                </div>
+            </div>
+        </div>
+        </div>
+    </div>
+
+            <!--Win modal-->
+            <div class="backdrop_win is-end">
+                <div class="win_modal">
+                    <h3 class="congrat_text">Congratulation!</h3>
+                    <button class="boss_fight_btn">Fight with boss</button>
+                </div>
+            </div>
+            <!--Lose modal-->
+            <div class="backdrop_loose is-end">
+               <div class="loose_modal">
+                <h3 class="loose_text">Retry</h3>
+                <button class="retry">Retry</button>
+               </div>
+            </div>
+
+    
+    <!--Boss partial-->
+    <div class="boss_fight_cover game_field_boss hide">
+        <h1 class="game_title">Game of Nums</h1>
+        <!--Player section-->
+        <div class="boss_dialog container is-end">
+            <div class="boss_phrase is-end">
+                <p class="enemy_text boss_text"></p>
+                <img src="./images/boss-speak.png" alt="boss speak" class="boss_icon">
+                <button class="next_btn phrase_after_boss">NEXT -></button>
+            </div>
+            <div class="hero_phrase hero_dialog is-end">
+                <img src="./images/me-speak.png" alt="hero speak" class="hero_icon">
+                <p class="hero_text hero_boss_text"></p>
+                <button class="start_battle push_battle">Fight</button>
+            </div>
+        </div>
+      <div class="container game_boss is-end">
+            <!--Player Block-->
+        <div class="player_div_boss boss_player">
+            <div class="player_image_div player_photo_pB">
+                <img src="./images/me-boss.png" alt="player icon" class="pers  meBoss">
+            </div>
+            <div class="player_stats">
+                <h3 class="boss_player_name player_name">@NAME@</h3>
+                <ul class="player round_list_playerBoss round_list">
+                </ul>
+            </div>
+        </div>
+        <!--Action screen-->
+        <div class="game_screen_Boss">
+            <ul class="generating_num_list">
+                <li class="generating_num_item PL_item_b">
+                    <span class="num_now_plBoss ">-</span>
+                </li>
+                <li class="generating_num_item AI_item_b">
+                    <span class="num_now_aiBoss">-</span>
+                </li>
+            </ul>
+            <button class="generate_btnBoss">FIGHT</button>
+        </div>
+        <!--AI section-->
+        <div class="computer_div_boss boss_player">
+          <ul class="boss_img_list player_photo_cB">
+              <li class="boss_img_item"><img src="./images/boss.png" alt="Archy Magnus" class="boss_icon"></li>
+              <li class="boss_img_item"><img src="./images/boss-shadow.png" alt="Shadow" class="boss_icon_shadow"></li>
+          </ul>
+            <div class="player_stats">
+                <h3 class="player_name">Archy Magnus</h3>
+                <ul class="player round_list round_list_bossBoss">
+                </ul>
+            </div>
+        </div>
+      </div>
+    </div>
+    
+    
+      <!--Win modal-->
+      <div class="backdrop_win_game is-end">
+        <div class="win_modal end_game">
+            <h3 class="congrat_text">Congratulation! You beat this mf bastard!</h3>
+            <a href="../../index.html"><button class="end_game_btn">Exit</button></a>
+            <button class="retry">Play again</button>
+        </div>
+    </div>
+    <!--Lose modal-->
+    <div class="backdrop_loose is-end">
+       <div class="loose_modal">
+        <h3 class="loose_text">You Suck!</h3>
+        <button class="retry retry_end">Retry</button>
+       </div>
+    </div>
+
+    <script src="./js/index.js" type="module"></script>
+    <script src = "https://cdnjs.cloudflare.com/ajax/libs/howler/2.1.1/howler.js"></script>
+</body>
+</html>

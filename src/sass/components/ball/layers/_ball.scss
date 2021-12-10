@@ -1,0 +1,155 @@
+body{
+    background: linear-gradient(90deg, rgba(0,61,98,1) 0%, rgba(3,109,173,1) 40%, rgba(0,61,98,1) 100%);
+}
+//ball cover
+.ball_div{
+    z-index: 44;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    @media screen and(min-width:320px){
+        width: 300px;
+        height: 300px;
+    } 
+    @media screen and (min-width:768px) {
+        width: 500px;
+        height: 500px;
+    }
+    
+    @media screen and (min-width:1200px) {
+     width: 600px;
+        height: 600px;
+    }
+}
+//ball body
+.ball{
+    z-index: 46;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: radial-gradient(circle, rgba(9,9,121,1) 13%, rgba(2,0,36,1) 32%, rgba(0,0,0,1) 93%);
+    border: 3px solid black;
+    border-radius: 50%;
+    box-shadow: 4px 26px 30px black;
+    @media screen and(min-width:320px){
+        width: 300px;
+        height: 300px;
+
+    } 
+    @media screen and (min-width:768px) {
+        width: 360px;
+        height: 360px;
+
+    }
+    
+    @media screen and (min-width:1200px) {
+     width: 480px;
+     height: 480px;
+
+    }
+}
+//ball screen
+.ball_screen{
+    z-index: 48;
+    border-radius: 50%;
+    background-color: yellowgreen;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+border:solid black;
+background: radial-gradient(circle, rgba(63,63,255,1) 13%, rgba(2,0,36,1) 83%, rgba(0,0,0,1) 93%);
+
+    @media screen and(min-width:320px){
+        width: 150px;
+        height: 150px;
+
+    } 
+    @media screen and (min-width:768px) {
+        width: 200px;
+        height: 200px;
+
+    }
+    
+    @media screen and (min-width:1200px) {
+     width: 240px;
+     height: 240px;
+
+    }
+}
+
+//paragraph
+.p_text{
+    z-index: 50;
+    color: radial-gradient(circle, rgba(244,244,255,1) 78%, rgba(14,0,255,0.7514356084230567) 100%);
+    text-shadow: 1px 2px 4px black;
+
+    @media screen and(min-width:320px){
+
+        font-size: 14px;
+     line-height: 16px;
+    } 
+    @media screen and (min-width:768px) {
+
+        font-size: 16px;
+     line-height: 18px;
+    }
+    
+    @media screen and (min-width:1200px) {
+
+     font-size: 24px;
+     line-height: 26px;
+    }
+}
+
+
+
+
+//btn useless
+.ball_btn{
+    z-index: 64;
+    border-radius: 50%;
+    background: transparent;
+    border-color: transparent;
+    position: absolute;
+
+    @media screen and(min-width:320px){
+        width: 300px;
+        height: 300px;
+    } 
+    @media screen and (min-width:768px) {
+        width: 360px;
+        width: 360px;
+    }
+    
+    @media screen and (min-width:1200px) {
+     width: 480px;
+     height: 480px;
+    }
+}
+
+//title
+h1{
+    margin: 0;
+    text-align: center;
+    text-shadow: 2px 2px 4px dimgrey;
+    @media screen and(min-width:320px){
+        font-size: 14px;
+        line-height: 16px;
+        font-weight: 500;   
+    } 
+    @media screen and (min-width:768px) {
+        font-size: 24px;
+        line-height: 66px;
+        font-weight: 600;    
+    }
+    
+    @media screen and (min-width:1200px) {
+     font-size: 44px;
+     line-height: 46px;
+     font-weight: 700; 
+    }
+}

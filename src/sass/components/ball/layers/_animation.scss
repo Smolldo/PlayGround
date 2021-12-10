@@ -1,0 +1,64 @@
+
+
+.shake{
+    animation-name: anim;
+    animation-duration: 0.4s;
+    animation-iteration-count: 1;  
+}
+
+
+@keyframes anim{
+    0% { transform: translate(3px, 3px) rotate(8deg); }
+    10% { transform: translate(-3px, -5px) rotate(-5deg); }
+    20% { transform: translate(-3px, 5px) rotate(5deg); }
+    30% { transform: translate(3px, 5px) rotate(8deg); }
+    40% { transform: translate(3px, -3px) rotate(5deg); }
+    50% { transform: translate(-3px, 5px) rotate(-5deg); }
+    60% { transform: translate(-3px, 3px) rotate(8deg); }
+    70% { transform: translate(3px, 3px) rotate(-5deg); }
+    80% { transform: translate(-3px, -3px) rotate(5deg); }
+    90% { transform: translate(3px, 5px) rotate(8deg); }
+    100% { transform: translate(3px, -5px) rotate(-5deg); }
+}
+
+.shake1{
+    animation-name: anim2;
+    animation-duration: 0.4s;
+    animation-iteration-count: 1; 
+}
+
+@keyframes anim2{
+    0% { transform: translate(5px, 5px) rotate(8deg); }
+    10% { transform: translate(-5px, -5px) rotate(-5deg); }
+    20% { transform: translate(-5px, 5px) rotate(5deg); }
+    30% { transform: translate(5px, 5px) rotate(8deg); }
+    40% { transform: translate(5px, -5px) rotate(5deg); }
+    50% { transform: translate(-5px, 5px) rotate(-5deg); }
+    60% { transform: translate(-5px, 3px) rotate(8deg); }
+    70% { transform: translate(3px, 3px) rotate(-5deg); }
+    80% { transform: translate(-3px, -3px) rotate(5deg); }
+    90% { transform: translate(3px, 5px) rotate(8deg); }
+    100% { transform: translate(3px, -5px) rotate(-5deg); }
+}
+
+.screen{
+    animation-name: screenV;
+    animation-duration: 0.5s;
+    animation-iteration-count: 1;
+}
+
+.screen1{
+    animation-name: screenB;
+    animation-duration: 0.5s;
+    animation-iteration-count: 1;
+}
+
+@keyframes screenV{
+    0%{opacity: 0;}
+    100%{opacity: 100%;}
+}
+
+@keyframes screenB{
+    0%{opacity: 0;}
+    100%{opacity: 100%;}
+}

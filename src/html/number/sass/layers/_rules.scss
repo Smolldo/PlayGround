@@ -1,0 +1,79 @@
+.rule_cover{
+    position: absolute;
+        z-index: 88;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+background-size: cover;
+background-position: center;
+    transition: all .3s linear; 
+    @media screen and (min-width:320px) {
+        background-image: linear-gradient(to left, var(--gradient-color)40%,
+    var(--gradient-color)100%),
+url('.././images/backgrounds/rule-mobile.png');
+       
+ }
+ @media screen and (min-width:768px) {
+    background-image: linear-gradient(to left, var(--gradient-color)40%,
+    var(--gradient-color)100%),
+url('.././images/backgrounds/rule-tablet.png');
+}
+@media screen and (min-width:1200px) {
+    background-image: linear-gradient(to left, var(--gradient-color)40%,
+    var(--gradient-color)100%),
+url('.././images/backgrounds/rule-back.jpg');
+}
+}
+.rule_list{
+    font-size: 18px;
+    line-height: 22px;
+    word-wrap: normal;
+    text-shadow: 0 3px 4px var(--box-shadow);
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+
+    @media screen and (min-width:320px) {
+        display: none;
+ }
+ 
+ @media screen and (min-width:1200px) {
+       display: block;
+ }
+}
+
+.rule_list_mobile{
+    font-size: 14px;
+    line-height: 16px;
+    word-wrap: normal;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 20px;
+    text-shadow: 0 3px 4px var(--box-shadow);
+
+    @media screen and (min-width:320px) {
+        display: block;
+        width: 240px;
+ }
+ @media screen and (min-width:568px) {
+    display: block;
+    width: 400px;
+}
+ 
+ @media screen and (min-width:1199px) {
+       display: none;
+ }
+}
+
+
+.rule_section{
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+   
+    padding-bottom: 20px;
+    padding-top: 20px;
+}

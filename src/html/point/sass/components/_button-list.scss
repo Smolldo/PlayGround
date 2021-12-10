@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Ceviche+One&display=swap');
+
+.card_btn_list{
+    display: flex;
+    justify-content: center;
+    @media screen and (min-width:320px) {
+        margin: 5px auto;
+    }
+    @media screen and (min-width:768px) {
+        margin: 15px auto;
+    }
+    
+    @media screen and (min-width:1200px) {
+        margin: 30px auto;
+   
+    }
+}
+
+.card_btn_item +.card_btn_item{
+    margin-left: 30px;
+}
+
+.card_btn{
+    padding-left: 16px;
+    padding-right: 16px;
+    align-self: center;
+    font-weight: 600;
+    font-family:'Ceviche One';
+    border-color: transparent;
+    border-radius: 16px;
+    background-color: rgb(224, 146, 0);
+    font-size: 32px;
+    transition: all .25s linear;
+
+    &:hover, &:focus{
+        cursor: pointer;
+        color: rgb(255, 0, 0);
+        background-color: rgb(255, 166, 0);
+        box-shadow: 2px 3px 4px black;
+    }
+}
+
+.retry_btn{
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 16px;
+    padding-right: 16px;
+    align-self: center;
+    font-weight: 600;
+    font-family:'Ceviche One';
+    border-color: transparent;
+    border-radius: 16px;
+    background-color: rgb(224, 146, 0);
+    font-size: 32px;
+    transition: all .25s linear;
+
+    &:hover, &:focus{
+        cursor: pointer;
+        color: rgb(255, 0, 0);
+        background-color: rgb(255, 166, 0);
+        box-shadow: 2px 3px 4px black;
+    }
+}
+
+.exit_btn{
+    margin-top: 30px;
+
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 16px;
+    padding-right: 16px;
+    align-self: center;
+    font-weight: 600;
+    font-family:'Ceviche One';
+    border-color: transparent;
+    border-radius: 16px;
+    background-color: rgb(224, 146, 0);
+    font-size: 32px;
+    transition: all .25s linear;
+
+    &:hover, &:focus{
+        cursor: pointer;
+        color: rgb(255, 0, 0);
+        background-color: rgb(255, 166, 0);
+        box-shadow: 2px 3px 4px black;
+    }
+}
+
+
+
+//Razdat' karty
+
+.give_card_btn{
+    position: absolute;
+    
+
+
+    padding-left: 16px;
+    padding-right: 16px;
+    align-self: center;
+    font-weight: 600;
+    font-family:'Ceviche One';
+    border-color: transparent;
+    border-radius: 16px;
+    background-color: rgb(224, 146, 0);
+    font-size: 32px;
+    transition: all .25s linear;
+
+    &:hover, &:focus{
+        cursor: pointer;
+        color: rgb(255, 0, 0);
+        background-color: rgb(255, 166, 0);
+        box-shadow: 2px 3px 4px black;
+    }
+
+    @media screen and (min-width:320px) {
+        top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    }
+    @media screen and (min-width:768px) {
+        top: 50%;
+    left: 47%;
+    transform: translate(-50%, -47%);
+    }
+    
+    @media screen and (min-width:1200px) {
+       
+    }
+}
+
+.main_menu_btn{
+    margin-top: 30px;
+    color: black;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 16px;
+    padding-right: 16px;
+    align-self: center;
+    font-weight: 600;
+    font-family:'Ceviche One';
+    border-color: transparent;
+    border-radius: 16px;
+    background-color: rgb(224, 146, 0);
+    font-size: 32px;
+    transition: all .25s linear;
+
+    &:hover, &:focus{
+        cursor: pointer;
+        color: rgb(255, 0, 0);
+        background-color: rgb(255, 166, 0);
+        box-shadow: 2px 3px 4px black;
+    }
+}
